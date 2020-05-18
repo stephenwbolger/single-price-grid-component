@@ -1,153 +1,50 @@
-/* 
-Colors
-- Cyan: #2AB3B1
-- Light Cyan: #49D4D2
-- Bright Yellow: #C0DF33
-- Blue Gray: #9AA7BE
-*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="css/main.css">
+  
+  <title>Single Price Grid Component</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="pricing">
+			<section class="first">
+				<h1>Join our community</h1>
 
-body {
-	font: 62.5%/1.333 'Karla', sans-serif;
-	letter-spacing:-0.013em;
-	background:#E6EFF5;
-}
-a {
-	text-decoration:none;
-}
+				<p>30-day, hassle-free money back guarantee</p>
 
-/* MOBILE */
-section {
-	padding:2.4em; /* 24px @ 10px */
-}
-/* first box */
-.first {
-	background-color:#fff;
-	padding:2.8em 2.4em 3.2em 2.4em; /* 28px 24px 32px 24px @ 10px */
-}
-.first h1 {
-	font-size:2em; /* 20px */
-	color:#2AB3B1; /* cyan */
-	font-weight:bold;
-	margin:0 0 1.2em 0; /* 0 0 24px 0 @ 20px */
-}
-.first h1 + p {
-	color:#C0DF33; /* bright yellow */
-	font-size:1.5em; /* 15px @ 10px */
-	font-weight:bold;
-	margin:0 0 1.067em 0; /* 0 0 16px 0 @ 15px */
-}
-.first p {
-	color:#9AA7BE;
-	font-size:1.4em; /* 14px @ 10px */
-	line-height:1.857em; /* 26px @ 14px */
-	margin:0;
-}
+				<p>Gain access to our full library of tutorials along with expert code reviews. 
+					Perfect for any developers who are serious about honing their skills.</p>
+			</section>
 
-/* second box */
-.second {
-	background-color:#2AB3B1; /* cyan */
-}
-.second h2 {
-	font-size:1.8em; /* 18px @ 10px */
-	color:#fff;
-	font-weight:bold;
-	margin:0 0 0.944em 0; /* 0 0 17px 0 @ 18px */ 
-}
-.second .price {
-	font-size:3.2em; /* 32px @ 10px */
-	color:#fff;
-	font-weight:bold;
-}
-.second p span {
-	font-size:.5em; /* 16px @ 32px */
-	color:rgba(255,255,255,.5); /* white 50% opacity */
-	vertical-align:middle;
-	font-weight:normal;
-	line-height:1.625;
-}
-.second p {
-	font-size:1.6em; /* 16px @ 10px */
-	color:#fff;
-	margin:0;
-	line-height:1.625em; /* 26px @ 16px */
-}
-.second .btn {
-	display:block;
-	background-color:#C0DF33; /* bright yellow */
-	padding:0.938em; /* 15px @ 16px */
-	text-align:center;
-	color:#fff;
-	border-radius:5px;
-	font-size:1.6em; /* 16px @ 10px */
-	max-width:375px;
-	margin-top:1.625em; /* 26px @ 16px */
-	box-shadow:0 10px 10px 0 rgba(0,0,0,.1);
-}
-.second .btn:active {
-	box-shadow:none;
-}
+			<section class="second">
+				<h2>Monthly Subscription</h2>
 
-/* third box */
-.third {
-	background-color:#49D4D2; /* light cyan */
-}
-.third h2 {
-	font-size:1.8em; /* 18px @ 10px */
-	color:#fff;
-	font-weight:bold;
-	margin:0 0 0.944em 0; /* 0 0 17px 0 @ 18px */ 
-}
-.third ul {
-	list-style:none;
-	margin:0;
-	padding:0;
-	color:rgba(255,255,255,.75); /* white 75% opacity */
-	font-size:1.4em; /* 14px @ 10px */
-	line-height:1.429; /* 20px @ 14px */
-}
+				<p class="price">&dollar;29 <span>per month</span></p>
+				<p>Full access for less than &dollar;1 a day</p>
 
-/* DESKTOP */
-@media all and (min-width:768px) {
-	.wrapper {
-		display:flex;
-		justify-content:center;
-		align-items:center;
-		height:100vh;
-	}
-	
-	section,
-	.first {
-		padding:4em; /* 40px @ 10px */ 
-	}
-	.pricing {
-		display:flex;
-		flex-wrap:wrap;
-		margin:3em auto; /* 30px auto @ 10px */ 
-		max-width:63.5em; /* 635px @ 10px */
-		box-shadow:0 15px 30px 0 rgba(0, 81, 171, 0.15);
-	}
-	.pricing > * {
-		flex:1;
-	}
-	/* first box */
-	.first {
-		flex-basis:100%;
-	}
-	.first h1 {
-		font-size:2.4em; /* 24px @ 10px */
-		letter-spacing:-0.013em; /* -0.3px */
-	}
-	.first h1 + p {
-		font-size:1.8em; /* 18px @ 10px */
-		margin:0 0 0.556em 0; /* 0 0 10px 0 @ 18px */
-	}
-	.first p {
-		color:#9AA7BE;
-		font-size:1.6em; /* 16px @ 10px */
-		line-height:1.625; /* 20px @ 16px */
-		margin:0 0 1.625em 0; /* 26px @ 16px */
-	}
-}
+				<a class="btn" href="#">Sign Up</a>
+			</section>
+
+			<section class="third">
+				<h2>Why Us</h2>
+
+				<ul>
+					<li>Tutorials by industry experts</li>
+					<li>Peer &amp; expert code review</li>
+					<li>Coding exercises</li>
+					<li>Access to our GitHub repos</li>
+					<li>Community forum</li>
+					<li>Flashcard decks</li>
+					<li>New videos every week</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+</body>
+</html>
