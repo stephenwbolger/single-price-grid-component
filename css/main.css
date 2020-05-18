@@ -12,6 +12,7 @@ Colors
 body {
 	font: 62.5%/1.333 'Karla', sans-serif;
 	letter-spacing:-0.013em;
+	background:#E6EFF5;
 }
 a {
 	text-decoration:none;
@@ -110,6 +111,12 @@ section {
 
 /* DESKTOP */
 @media all and (min-width:768px) {
+	.wrapper {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		height:100vh;
+	}
 	section,
 	.first {
 		padding:4em; /* 40px @ 10px */ 
@@ -119,7 +126,7 @@ section {
 		flex-wrap:wrap;
 		margin:3em auto; /* 30px auto @ 10px */ 
 		max-width:63.5em; /* 635px @ 10px */
-		box-shadow:0 15px 30px 0 #0051AB; /* blue */
+		box-shadow:0 15px 30px 0 rgba(0, 81, 171, 0.15);
 	}
 	.pricing > * {
 		flex:1;
